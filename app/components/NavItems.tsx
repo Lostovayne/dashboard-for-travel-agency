@@ -2,7 +2,7 @@ import { cn } from "lib/utils";
 import { Link, NavLink } from "react-router";
 import { sidebarItems } from "~/constants";
 
-const NavItems = () => {
+const NavItems = ({ handleClick }: { handleClick: VoidFunction }) => {
   const user = {
     name: "John Doe",
     email: "contact@john.com",
@@ -25,6 +25,7 @@ const NavItems = () => {
                   className={cn("group nav-item transition-colors", {
                     "bg-primary-100 !text-white": isActive,
                   })}
+                  onClick={handleClick}
                 >
                   <img
                     src={icon}

@@ -9,7 +9,7 @@ const AdminLayout = () => {
 
       <aside className="w-full max-w-[270px] hidden lg:block">
         <SidebarComponent width={270} enableGestures={false}>
-          <NavItems />
+          <NavItems handleClick={()=> console.log("falta implementar aun")} />
         </SidebarComponent>
       </aside>
 
