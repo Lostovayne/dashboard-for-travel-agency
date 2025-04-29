@@ -10,7 +10,7 @@ const NavItems = ({ handleClick }: { handleClick: VoidFunction }) => {
   };
 
   return (
-    <section className="nav-items">
+    <section className="nav-items h-screen">
       <Link to="/" className="link-logo">
         <img src="/assets/icons/logo.svg" alt="logo" className="size-[30px]" />
         <h1>Tourvisto</h1>
